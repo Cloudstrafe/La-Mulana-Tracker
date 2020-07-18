@@ -5,138 +5,139 @@
     <title>La-Mulana Tracker</title>
     <link rel="stylesheet" type="text/css" href="tracker.css"/>
 </head>
-    <body>
-        <table id="outertable">
-            <tr>
-                <td>
-                    <table id="weapons">
-                        <caption>Main Weapons</caption>
-                        <tr>
-                            <td id="whip" onclick="toggleProgressive(this, 3)"><img class="whip" src="icons/whipG.png"/> <img class="whip" src="icons/whip1.png" style="display: none"/></td>
-                            <td id="knife" onclick="toggle(this)"><img class="knife" src="icons/knifeG.png"/> <img class="knife" src="icons/knife.png" style="display: none"/></td>
-                            <td id="keysword" onclick="toggle(this)"><img class="keysword" src="icons/keyswordG.png"/> <img class="keysword" src="icons/keysword.png" style="display: none"/></td>
-                            <td id="axe" onclick="toggle(this)"><img class="axe" src="icons/axeG.png"/> <img class="axe" src="icons/axe.png" style="display: none"/></td>
-                            <td id="katana" onclick="toggle(this)"><img class="katana" src="icons/katanaG.png"/> <img class="katana" src="icons/katana.png" style="display: none"/></td>
-                        </tr>
-                    </table>
-                    <table id="subweapons">
-                        <caption>Sub Weapons</caption>
-                        <tr>
-                            <td id="shuriken" onclick="toggle(this)"><img class="shuriken" src="icons/shurikenG.png"/> <img class="shuriken" src="icons/shuriken.png" style="display: none"/></td>
-                            <td id="rollingshuriken" onclick="toggle(this)"><img class="rollingshuriken" src="icons/rollingshurikenG.png"/> <img class="rollingshuriken" src="icons/rollingshuriken.png" style="display: none"/></td>
-                            <td id="earthspear" onclick="toggle(this)"><img class="earthspear" src="icons/earthspearG.png"/> <img class="earthspear" src="icons/earthspear.png" style="display: none"/></td>
-                            <td id="flaregun" onclick="toggle(this)"><img class="flaregun" src="icons/flaregunG.png"/> <img class="flaregun" src="icons/flaregun.png" style="display: none"/></td>
-                            <td id="bomb" onclick="toggle(this)"><img class="bomb" src="icons/bombG.png"/> <img class="bomb" src="icons/bomb.png" style="display: none"/></td>
-                        </tr>
-                        <tr>
-                            <td id="chakram" onclick="toggle(this)"><img class="chakram" src="icons/chakramG.png"/> <img class="chakram" src="icons/chakram.png" style="display: none"/></td>
-                            <td id="caltrops" onclick="toggle(this)"><img class="caltrops" src="icons/caltropsG.png"/> <img class="caltrops" src="icons/caltrops.png" style="display: none"/></td>
-                            <td id="pistol" onclick="toggle(this)"><img class="pistol" src="icons/pistolG.png"/> <img class="pistol" src="icons/pistol.png" style="display: none"/></td>
-                            <td id="buckler" onclick="toggleProgressive(this, 3)"><img class="buckler" src="icons/bucklerG.png"/> <img class="buckler" src="icons/buckler1.png" style="display: none"/></td>
-                            <td id="ankhjewel" onclick="toggleProgressive(this, 8)"><img class="ankhjewel" src="icons/ankhjewelG.png"/> <img class="ankhjewel" src="icons/ankhjewel1.png" style="display: none"/></td>
-                        </tr>
-                    </table>
-                    <table id="useableitems">
-                        <caption>Usable Items</caption>
-                        <tr>
-                            <td id="handscanner" onclick="toggle(this)"><img class="handscanner" src="icons/handscannerG.png"/> <img class="handscanner" src="icons/handscanner.png" style="display: none"/></td>
-                            <td id="djedpillar" onclick="toggle(this)"><img class="djedpillar" src="icons/djedpillarG.png"/> <img class="djedpillar" src="icons/djedpillar.png" style="display: none"/></td>
-                            <td id="minidoll" onclick="toggle(this)"><img class="minidoll" src="icons/minidollG.png"/> <img class="minidoll" src="icons/minidoll.png" style="display: none"/></td>
-                            <td id="magatamajewel" onclick="toggle(this)"><img class="magatamajewel" src="icons/magatamajewelG.png"/> <img class="magatamajewel" src="icons/magatamajewel.png" style="display: none"/></td>
-                            <td id="cogofthesoul" onclick="toggle(this)"><img class="cogofthesoul" src="icons/cogofthesoulG.png"/> <img class="cogofthesoul" src="icons/cogofthesoul.png" style="display: none"/></td>
-                        </tr>
-                        <tr>
-                            <td id="lampoftime" onclick="toggle(this)"><img class="lampoftime" src="icons/lampoftimeG.png"/> <img class="lampoftime" src="icons/lampoftime.png" style="display: none"/></td>
-                            <td id="pochettekey" onclick="toggle(this)"><img class="pochettekey" src="icons/pochettekeyG.png"/> <img class="pochettekey" src="icons/pochettekey.png" style="display: none"/></td>
-                            <td id="dragonbone" onclick="toggle(this)"><img class="dragonbone" src="icons/dragonboneG.png"/> <img class="dragonbone" src="icons/dragonbone.png" style="display: none"/></td>
-                            <td id="crystalskull" onclick="toggle(this)"><img class="crystalskull" src="icons/crystalskullG.png"/> <img class="crystalskull" src="icons/crystalskull.png" style="display: none"/></td>
-                            <td id="vessel" onclick="toggle(this)"><img class="vessel" src="icons/vesselG.png"/> <img class="vessel" src="icons/vessel.png" style="display: none"/></td>
-                        </tr>
-                        <tr>
-                            <td id="pepper" onclick="toggle(this)"><img class="pepper" src="icons/pepperG.png"/> <img class="pepper" src="icons/pepper.png" style="display: none"/></td>
-                            <td id="womanstatue" onclick="toggle(this)"><img class="womanstatue" src="icons/womanstatueG.png"/> <img class="womanstatue" src="icons/womanstatue.png" style="display: none"/></td>
-                            <td id="keyofeternity" onclick="toggle(this)"><img class="keyofeternity" src="icons/keyofeternityG.png"/> <img class="keyofeternity" src="icons/keyofeternity.png" style="display: none"/></td>
-                            <td id="serpentstaff" onclick="toggle(this)"><img class="serpentstaff" src="icons/serpentstaffG.png"/> <img class="serpentstaff" src="icons/serpentstaff.png" style="display: none"/></td>
-                            <td id="talisman" onclick="toggle(this)"><img class="talisman" src="icons/talismanG.png"/> <img class="talisman" src="icons/talisman.png" style="display: none"/></td>
-                        </tr>
-                        <tr>
-                            <td id="diary" onclick="toggle(this)"><img class="diary" src="icons/diaryG.png"/> <img class="diary" src="icons/diary.png" style="display: none"/></td>
-                            <td id="mulanatalisman" onclick="toggle(this)"><img class="mulanatalisman" src="icons/mulanatalismanG.png"/> <img class="mulanatalisman" src="icons/mulanatalisman.png" style="display: none"/></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
-                    <table id="spantext">
-                        <tr>
-                            <td id="counterspans">
-                                <span>Items Found: </span>
-                                <span id="counter">0</span>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-                <td id="rightcolumn">
-                    <table id="items">
-                        <caption>Items</caption>
-                        <tr>
-                            <td id="msx2" onclick="toggle(this)"><img class="msx2" src="icons/msx2G.png"/> <img class="msx2" src="icons/msx2.png" style="display: none"/></td>
-                            <td id="waterproofcase" onclick="toggle(this)"><img class="waterproofcase" src="icons/waterproofcaseG.png"/> <img class="waterproofcase" src="icons/waterproofcase.png" style="display: none"/></td>
-                            <td id="heatproofcase" onclick="toggle(this)"><img class="heatproofcase" src="icons/heatproofcaseG.png"/> <img class="heatproofcase" src="icons/heatproofcase.png" style="display: none"/></td>
-                            <td id="shellhorn" onclick="toggle(this)"><img class="shellhorn" src="icons/shellhornG.png"/> <img class="shellhorn" src="icons/shellhorn.png" style="display: none"/></td>
-                            <td id="glove" onclick="toggle(this)"><img class="glove" src="icons/gloveG.png"/> <img class="glove" src="icons/glove.png" style="display: none"/></td>
-                        </tr>
-                        <tr>
-                            <td id="holygrail" onclick="toggle(this)"><img class="holygrail" src="icons/holygrailG.png"/> <img class="holygrail" src="icons/holygrail.png" style="display: none"/></td>
-                            <td id="isispendant" onclick="toggle(this)"><img class="isispendant" src="icons/isispendantG.png"/> <img class="isispendant" src="icons/isispendant.png" style="display: none"/></td>
-                            <td id="crucifix" onclick="toggle(this)"><img class="crucifix" src="icons/crucifixG.png"/> <img class="crucifix" src="icons/crucifix.png" style="display: none"/></td>
-                            <td id="helmet" onclick="toggle(this)"><img class="helmet" src="icons/helmetG.png"/> <img class="helmet" src="icons/helmet.png" style="display: none"/></td>
-                            <td id="grappleclaw" onclick="toggle(this)"><img class="grappleclaw" src="icons/grappleclawG.png"/> <img class="grappleclaw" src="icons/grappleclaw.png" style="display: none"/></td>
-                        </tr>
-                        <tr>
-                            <td id="bronzemirror" onclick="toggle(this)"><img class="bronzemirror" src="icons/bronzemirrorG.png"/> <img class="bronzemirror" src="icons/bronzemirror.png" style="display: none"/></td>
-                            <td id="eyeoftruth" onclick="toggle(this)"><img class="eyeoftruth" src="icons/eyeoftruthG.png"/> <img class="eyeoftruth" src="icons/eyeoftruth.png" style="display: none"/></td>
-                            <td id="ring" onclick="toggle(this)"><img class="ring" src="icons/ringG.png"/> <img class="ring" src="icons/ring.png" style="display: none"/></td>
-                            <td id="scalesphere" onclick="toggle(this)"><img class="scalesphere" src="icons/scalesphereG.png"/> <img class="scalesphere" src="icons/scalesphere.png" style="display: none"/></td>
-                            <td id="gauntlet" onclick="toggle(this)"><img class="gauntlet" src="icons/gauntletG.png"/> <img class="gauntlet" src="icons/gauntlet.png" style="display: none"/></td>
-                        </tr>
-                        <tr>
-                            <td id="anchor" onclick="toggle(this)"><img class="anchor" src="icons/anchorG.png"/> <img class="anchor" src="icons/anchor.png" style="display: none"/></td>
-                            <td id="planemodel" onclick="toggle(this)"><img class="planemodel" src="icons/planemodelG.png"/> <img class="planemodel" src="icons/planemodel.png" style="display: none"/></td>
-                            <td id="philosophersocarina" onclick="toggle(this)"><img class="philosophersocarina" src="icons/philosophersocarinaG.png"/> <img class="philosophersocarina" src="icons/philosophersocarina.png" style="display: none"/></td>
-                            <td id="feather" onclick="toggle(this)"><img class="feather" src="icons/featherG.png"/> <img class="feather" src="icons/feather.png" style="display: none"/></td>
-                            <td id="bookofthedead" onclick="toggle(this)"><img class="bookofthedead" src="icons/bookofthedeadG.png"/> <img class="bookofthedead" src="icons/bookofthedead.png" style="display: none"/></td>
-                        </tr>
-                        <tr>
-                            <td id="fairyclothes" onclick="toggle(this)"><img class="fairyclothes" src="icons/fairyclothesG.png"/> <img class="fairyclothes" src="icons/fairyclothes.png" style="display: none"/></td>
-                            <td id="scriptures" onclick="toggle(this)"><img class="scriptures" src="icons/scripturesG.png"/> <img class="scriptures" src="icons/scriptures.png" style="display: none"/></td>
-                            <td id="hermesboots" onclick="toggle(this)"><img class="hermesboots" src="icons/hermesbootsG.png"/> <img class="hermesboots" src="icons/hermesboots.png" style="display: none"/></td>
-                            <td id="fruitofeden" onclick="toggle(this)"><img class="fruitofeden" src="icons/fruitofedenG.png"/> <img class="fruitofeden" src="icons/fruitofeden.png" style="display: none"/></td>
-                            <td id="twinstatue" onclick="toggle(this)"><img class="twinstatue" src="icons/twinstatueG.png"/> <img class="twinstatue" src="icons/twinstatue.png" style="display: none"/></td>
-                        </tr>
-                        <tr>
-                            <td id="bracelet" onclick="toggle(this)"><img class="bracelet" src="icons/braceletG.png"/> <img class="bracelet" src="icons/bracelet.png" style="display: none"/></td>
-                            <td id="perfume" onclick="toggle(this)"><img class="perfume" src="icons/perfumeG.png"/> <img class="perfume" src="icons/perfume.png" style="display: none"/></td>
-                            <td id="spaulder" onclick="toggle(this)"><img class="spaulder" src="icons/spaulderG.png"/> <img class="spaulder" src="icons/spaulder.png" style="display: none"/></td>
-                            <td id="dimensionalkey" onclick="toggle(this)"><img class="dimensionalkey" src="icons/dimensionalkeyG.png"/> <img class="dimensionalkey" src="icons/dimensionalkey.png" style="display: none"/></td>
-                            <td id="icecape" onclick="toggle(this)"><img class="icecape" src="icons/icecapeG.png"/> <img class="icecape" src="icons/icecape.png" style="display: none"/></td>
-                        </tr>
-                    </table>
-                    <table id="seals">
-                        <caption>Seals</caption>
-                        <tr>
-                            <td id="originseal" onclick="toggle(this)"><img class="originseal" src="icons/originsealG.png"/> <img class="originseal" src="icons/originseal.png" style="display: none"/></td>
-                            <td id="birthseal" onclick="toggle(this)"><img class="birthseal" src="icons/birthsealG.png"/> <img class="birthseal" src="icons/birthseal.png" style="display: none"/></td>
-                            <td id="lifeseal" onclick="toggle(this)"><img class="lifeseal" src="icons/lifesealG.png"/> <img class="lifeseal" src="icons/lifeseal.png" style="display: none"/></td>
-                            <td id="deathseal" onclick="toggle(this)"><img class="deathseal" src="icons/deathsealG.png"/> <img class="deathseal" src="icons/deathseal.png" style="display: none"/></td>
-                            <td id="secrettreasureoflife" onclick="toggle(this)"><img class="secrettreasureoflife" src="icons/secrettreasureoflifeG.png"/> <img class="secrettreasureoflife" src="icons/secrettreasureoflife.png" style="display: none"/></td>
-                        </tr>
-                    </table>
-                </td>
+<body>
+<table id="outertable">
+    <tr>
+        <td>
+            <table id="weapons">
+                <caption>Main Weapons</caption>
+                <tr>
+                    <td id="whip" onclick="toggleProgressive(this, 3)"><img class="whip" src="icons/whipG.png"/> <img class="whip" src="icons/whip1.png" style="display: none"/></td>
+                    <td id="knife" onclick="toggle(this)"><img class="knife" src="icons/knifeG.png"/> <img class="knife" src="icons/knife.png" style="display: none"/></td>
+                    <td id="keysword" onclick="toggle(this)"><img class="keysword" src="icons/keyswordG.png"/> <img class="keysword" src="icons/keysword.png" style="display: none"/></td>
+                    <td id="axe" onclick="toggle(this)"><img class="axe" src="icons/axeG.png"/> <img class="axe" src="icons/axe.png" style="display: none"/></td>
+                    <td id="katana" onclick="toggle(this)"><img class="katana" src="icons/katanaG.png"/> <img class="katana" src="icons/katana.png" style="display: none"/></td>
+                </tr>
             </table>
-        </table>
-    </body>
-    <script type="text/javascript">
+            <table id="subweapons">
+                <caption>Sub Weapons</caption>
+                <tr>
+                    <td id="shuriken" onclick="toggle(this)"><img class="shuriken" src="icons/shurikenG.png"/> <img class="shuriken" src="icons/shuriken.png" style="display: none"/></td>
+                    <td id="rollingshuriken" onclick="toggle(this)"><img class="rollingshuriken" src="icons/rollingshurikenG.png"/> <img class="rollingshuriken" src="icons/rollingshuriken.png" style="display: none"/></td>
+                    <td id="earthspear" onclick="toggle(this)"><img class="earthspear" src="icons/earthspearG.png"/> <img class="earthspear" src="icons/earthspear.png" style="display: none"/></td>
+                    <td id="flaregun" onclick="toggle(this)"><img class="flaregun" src="icons/flaregunG.png"/> <img class="flaregun" src="icons/flaregun.png" style="display: none"/></td>
+                    <td id="bomb" onclick="toggle(this)"><img class="bomb" src="icons/bombG.png"/> <img class="bomb" src="icons/bomb.png" style="display: none"/></td>
+                </tr>
+                <tr>
+                    <td id="chakram" onclick="toggle(this)"><img class="chakram" src="icons/chakramG.png"/> <img class="chakram" src="icons/chakram.png" style="display: none"/></td>
+                    <td id="caltrops" onclick="toggle(this)"><img class="caltrops" src="icons/caltropsG.png"/> <img class="caltrops" src="icons/caltrops.png" style="display: none"/></td>
+                    <td id="pistol" onclick="toggle(this)"><img class="pistol" src="icons/pistolG.png"/> <img class="pistol" src="icons/pistol.png" style="display: none"/></td>
+                    <td id="buckler" onclick="toggleProgressive(this, 3)"><img class="buckler" src="icons/bucklerG.png"/> <img class="buckler" src="icons/buckler1.png" style="display: none"/></td>
+                    <td id="ankhjewel" onclick="toggleProgressive(this, 8)"><img class="ankhjewel" src="icons/ankhjewelG.png"/> <img class="ankhjewel" src="icons/ankhjewel1.png" style="display: none"/></td>
+                </tr>
+            </table>
+            <table id="useableitems">
+                <caption>Usable Items</caption>
+                <tr>
+                    <td id="handscanner" onclick="toggle(this)"><img class="handscanner" src="icons/handscannerG.png"/> <img class="handscanner" src="icons/handscanner.png" style="display: none"/></td>
+                    <td id="djedpillar" onclick="toggle(this)"><img class="djedpillar" src="icons/djedpillarG.png"/> <img class="djedpillar" src="icons/djedpillar.png" style="display: none"/></td>
+                    <td id="minidoll" onclick="toggle(this)"><img class="minidoll" src="icons/minidollG.png"/> <img class="minidoll" src="icons/minidoll.png" style="display: none"/></td>
+                    <td id="magatamajewel" onclick="toggle(this)"><img class="magatamajewel" src="icons/magatamajewelG.png"/> <img class="magatamajewel" src="icons/magatamajewel.png" style="display: none"/></td>
+                    <td id="cogofthesoul" onclick="toggle(this)"><img class="cogofthesoul" src="icons/cogofthesoulG.png"/> <img class="cogofthesoul" src="icons/cogofthesoul.png" style="display: none"/></td>
+                </tr>
+                <tr>
+                    <td id="lampoftime" onclick="toggle(this)"><img class="lampoftime" src="icons/lampoftimeG.png"/> <img class="lampoftime" src="icons/lampoftime.png" style="display: none"/></td>
+                    <td id="pochettekey" onclick="toggle(this)"><img class="pochettekey" src="icons/pochettekeyG.png"/> <img class="pochettekey" src="icons/pochettekey.png" style="display: none"/></td>
+                    <td id="dragonbone" onclick="toggle(this)"><img class="dragonbone" src="icons/dragonboneG.png"/> <img class="dragonbone" src="icons/dragonbone.png" style="display: none"/></td>
+                    <td id="crystalskull" onclick="toggle(this)"><img class="crystalskull" src="icons/crystalskullG.png"/> <img class="crystalskull" src="icons/crystalskull.png" style="display: none"/></td>
+                    <td id="vessel" onclick="toggle(this)"><img class="vessel" src="icons/vesselG.png"/> <img class="vessel" src="icons/vessel.png" style="display: none"/></td>
+                </tr>
+                <tr>
+                    <td id="pepper" onclick="toggle(this)"><img class="pepper" src="icons/pepperG.png"/> <img class="pepper" src="icons/pepper.png" style="display: none"/></td>
+                    <td id="womanstatue" onclick="toggle(this)"><img class="womanstatue" src="icons/womanstatueG.png"/> <img class="womanstatue" src="icons/womanstatue.png" style="display: none"/></td>
+                    <td id="keyofeternity" onclick="toggle(this)"><img class="keyofeternity" src="icons/keyofeternityG.png"/> <img class="keyofeternity" src="icons/keyofeternity.png" style="display: none"/></td>
+                    <td id="serpentstaff" onclick="toggle(this)"><img class="serpentstaff" src="icons/serpentstaffG.png"/> <img class="serpentstaff" src="icons/serpentstaff.png" style="display: none"/></td>
+                    <td id="talisman" onclick="toggle(this)"><img class="talisman" src="icons/talismanG.png"/> <img class="talisman" src="icons/talisman.png" style="display: none"/></td>
+                </tr>
+                <tr>
+                    <td id="diary" onclick="toggle(this)"><img class="diary" src="icons/diaryG.png"/> <img class="diary" src="icons/diary.png" style="display: none"/></td>
+                    <td id="mulanatalisman" onclick="toggle(this)"><img class="mulanatalisman" src="icons/mulanatalismanG.png"/> <img class="mulanatalisman" src="icons/mulanatalisman.png" style="display: none"/></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <table id="spantext">
+                <tr>
+                    <td id="counterspans">
+                        <span>Items Found: </span>
+                        <span id="counter">0</span>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td id="rightcolumn">
+            <table id="items">
+                <caption>Items</caption>
+                <tr>
+                    <td id="msx2" onclick="toggle(this)"><img class="msx2" src="icons/msx2G.png"/> <img class="msx2" src="icons/msx2.png" style="display: none"/></td>
+                    <td id="waterproofcase" onclick="toggle(this)"><img class="waterproofcase" src="icons/waterproofcaseG.png"/> <img class="waterproofcase" src="icons/waterproofcase.png" style="display: none"/></td>
+                    <td id="heatproofcase" onclick="toggle(this)"><img class="heatproofcase" src="icons/heatproofcaseG.png"/> <img class="heatproofcase" src="icons/heatproofcase.png" style="display: none"/></td>
+                    <td id="shellhorn" onclick="toggle(this)"><img class="shellhorn" src="icons/shellhornG.png"/> <img class="shellhorn" src="icons/shellhorn.png" style="display: none"/></td>
+                    <td id="glove" onclick="toggle(this)"><img class="glove" src="icons/gloveG.png"/> <img class="glove" src="icons/glove.png" style="display: none"/></td>
+                </tr>
+                <tr>
+                    <td id="holygrail" onclick="toggle(this)"><img class="holygrail" src="icons/holygrailG.png"/> <img class="holygrail" src="icons/holygrail.png" style="display: none"/></td>
+                    <td id="isispendant" onclick="toggle(this)"><img class="isispendant" src="icons/isispendantG.png"/> <img class="isispendant" src="icons/isispendant.png" style="display: none"/></td>
+                    <td id="crucifix" onclick="toggle(this)"><img class="crucifix" src="icons/crucifixG.png"/> <img class="crucifix" src="icons/crucifix.png" style="display: none"/></td>
+                    <td id="helmet" onclick="toggle(this)"><img class="helmet" src="icons/helmetG.png"/> <img class="helmet" src="icons/helmet.png" style="display: none"/></td>
+                    <td id="grappleclaw" onclick="toggle(this)"><img class="grappleclaw" src="icons/grappleclawG.png"/> <img class="grappleclaw" src="icons/grappleclaw.png" style="display: none"/></td>
+                </tr>
+                <tr>
+                    <td id="bronzemirror" onclick="toggle(this)"><img class="bronzemirror" src="icons/bronzemirrorG.png"/> <img class="bronzemirror" src="icons/bronzemirror.png" style="display: none"/></td>
+                    <td id="eyeoftruth" onclick="toggle(this)"><img class="eyeoftruth" src="icons/eyeoftruthG.png"/> <img class="eyeoftruth" src="icons/eyeoftruth.png" style="display: none"/></td>
+                    <td id="ring" onclick="toggle(this)"><img class="ring" src="icons/ringG.png"/> <img class="ring" src="icons/ring.png" style="display: none"/></td>
+                    <td id="scalesphere" onclick="toggle(this)"><img class="scalesphere" src="icons/scalesphereG.png"/> <img class="scalesphere" src="icons/scalesphere.png" style="display: none"/></td>
+                    <td id="gauntlet" onclick="toggle(this)"><img class="gauntlet" src="icons/gauntletG.png"/> <img class="gauntlet" src="icons/gauntlet.png" style="display: none"/></td>
+                </tr>
+                <tr>
+                    <td id="anchor" onclick="toggle(this)"><img class="anchor" src="icons/anchorG.png"/> <img class="anchor" src="icons/anchor.png" style="display: none"/></td>
+                    <td id="planemodel" onclick="toggle(this)"><img class="planemodel" src="icons/planemodelG.png"/> <img class="planemodel" src="icons/planemodel.png" style="display: none"/></td>
+                    <td id="philosophersocarina" onclick="toggle(this)"><img class="philosophersocarina" src="icons/philosophersocarinaG.png"/> <img class="philosophersocarina" src="icons/philosophersocarina.png" style="display: none"/>
+                    </td>
+                    <td id="feather" onclick="toggle(this)"><img class="feather" src="icons/featherG.png"/> <img class="feather" src="icons/feather.png" style="display: none"/></td>
+                    <td id="bookofthedead" onclick="toggle(this)"><img class="bookofthedead" src="icons/bookofthedeadG.png"/> <img class="bookofthedead" src="icons/bookofthedead.png" style="display: none"/></td>
+                </tr>
+                <tr>
+                    <td id="fairyclothes" onclick="toggle(this)"><img class="fairyclothes" src="icons/fairyclothesG.png"/> <img class="fairyclothes" src="icons/fairyclothes.png" style="display: none"/></td>
+                    <td id="scriptures" onclick="toggle(this)"><img class="scriptures" src="icons/scripturesG.png"/> <img class="scriptures" src="icons/scriptures.png" style="display: none"/></td>
+                    <td id="hermesboots" onclick="toggle(this)"><img class="hermesboots" src="icons/hermesbootsG.png"/> <img class="hermesboots" src="icons/hermesboots.png" style="display: none"/></td>
+                    <td id="fruitofeden" onclick="toggle(this)"><img class="fruitofeden" src="icons/fruitofedenG.png"/> <img class="fruitofeden" src="icons/fruitofeden.png" style="display: none"/></td>
+                    <td id="twinstatue" onclick="toggle(this)"><img class="twinstatue" src="icons/twinstatueG.png"/> <img class="twinstatue" src="icons/twinstatue.png" style="display: none"/></td>
+                </tr>
+                <tr>
+                    <td id="bracelet" onclick="toggle(this)"><img class="bracelet" src="icons/braceletG.png"/> <img class="bracelet" src="icons/bracelet.png" style="display: none"/></td>
+                    <td id="perfume" onclick="toggle(this)"><img class="perfume" src="icons/perfumeG.png"/> <img class="perfume" src="icons/perfume.png" style="display: none"/></td>
+                    <td id="spaulder" onclick="toggle(this)"><img class="spaulder" src="icons/spaulderG.png"/> <img class="spaulder" src="icons/spaulder.png" style="display: none"/></td>
+                    <td id="dimensionalkey" onclick="toggle(this)"><img class="dimensionalkey" src="icons/dimensionalkeyG.png"/> <img class="dimensionalkey" src="icons/dimensionalkey.png" style="display: none"/></td>
+                    <td id="icecape" onclick="toggle(this)"><img class="icecape" src="icons/icecapeG.png"/> <img class="icecape" src="icons/icecape.png" style="display: none"/></td>
+                </tr>
+            </table>
+            <table id="seals">
+                <caption>Seals</caption>
+                <tr>
+                    <td id="originseal" onclick="toggle(this)"><img class="originseal" src="icons/originsealG.png"/> <img class="originseal" src="icons/originseal.png" style="display: none"/></td>
+                    <td id="birthseal" onclick="toggle(this)"><img class="birthseal" src="icons/birthsealG.png"/> <img class="birthseal" src="icons/birthseal.png" style="display: none"/></td>
+                    <td id="lifeseal" onclick="toggle(this)"><img class="lifeseal" src="icons/lifesealG.png"/> <img class="lifeseal" src="icons/lifeseal.png" style="display: none"/></td>
+                    <td id="deathseal" onclick="toggle(this)"><img class="deathseal" src="icons/deathsealG.png"/> <img class="deathseal" src="icons/deathseal.png" style="display: none"/></td>
+                    <td id="secrettreasureoflife" onclick="toggle(this)"><img class="secrettreasureoflife" src="icons/secrettreasureoflifeG.png"/> <img class="secrettreasureoflife" src="icons/secrettreasureoflife.png"
+                                                                                                                                                        style="display: none"/></td>
+                </tr>
+            </table>
+        </td>
+</table>
+</body>
+<script type="text/javascript">
 
         function toggle(elem) {
             var items = document.getElementsByClassName(elem.id);
@@ -190,5 +191,6 @@
             var counterspan = document.getElementById("counter");
             counterspan.innerHTML = parseInt(counterspan.innerHTML) + change;
         }
-    </script>
+
+</script>
 </html>
