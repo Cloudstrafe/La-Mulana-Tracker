@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+}
+
+table {
+    background-color: #123456;
+    border-spacing: 2px 0;
+}
+
+span {
+    font-size: 32px;
+    color: white;
+}
+
+#outertable {
+    padding: 5px;
+}
+
+#rightcolumn{
+    vertical-align: top;
+    padding-left: 20px;
+}
+
+table#spantext {
+    height: 46px;
+}
+
+#counterspans {
+    vertical-align: middle;
+    text-align: center;
+}
+
+caption {
+    color: white;
+}
